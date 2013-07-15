@@ -24,3 +24,6 @@ group :development do
 	gem "better_errors", ">= 0.7.2"
 end
 
+# For Heroku usage (for now)
+gem 'rails_12factor', group: :production
+
