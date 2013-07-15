@@ -1,0 +1,21 @@
+<div id="disqus_thread">
+	<a href="javascript:void(0)" id="disqus_load" class="load-comments">View Discussion</a>
+</div>
+<script type="text/javascript">
+  var disqus_shortname = 'paulmederos';
+  var disqus_url = "<%= @disqus_url %>";
+
+  $(function() {
+    var ds_loaded = false;
+
+    function dsqs() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq); 
+    }
+
+    dsqs();
+
+    $('#disqus_load').on('click', function(){ ds_loaded = true; dsqs(); });  
+  });
+</script>  

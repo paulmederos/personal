@@ -1,0 +1,11 @@
+<style type="text/css">
+		blockquote { border-color: <%= @color_overlay %>;}
+		a:hover { color: <%= @color_overlay %>;}
+</style>
+
+<header class="topic-photo" style="background-image:url(<%= @background_image %>)" id="top">
+	<div class="full-wrap copy-wrap">
+		<h1 class="topic-title"><%= raw @post_title_html %></h1>
+	</div>
+	<div class="color-overlay" style="background-color:<%= @color_overlay %>"></div>
+</header>

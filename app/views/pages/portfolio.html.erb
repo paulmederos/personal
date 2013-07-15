@@ -1,0 +1,168 @@
+<%  # Page variables 
+    @post_title = "Adventures, projects, and people helped"
+    @post_title_html = "Adventures"
+    @disqus_url = "http://paulmederos.com/adventures"
+    @background_image = "http://paulmederos.s3.amazonaws.com/blog/backgrounds/adventures.jpg"
+%>
+
+
+<header class="topic-photo adventures-photo" style="background-image:url(<%= @background_image %>);" id="top">
+  <div class="full-wrap copy-wrap">
+    <h1 class="topic-title"><%= raw @post_title_html %></h1>
+  </div>
+  <div class="color-overlay" style="background-color:<%= @color_overlay %>"></div>
+</header>
+
+<article class="main-content full-wrap copy-wrap portfolio-content">
+  <p>In the past decade of my work as a designer, I've had the chance to work with amazing people on projects that have made a huge difference in the world. Below you'll find just a few of my recent projects. Enjoy!</p>
+  <ol class="timeline">
+    <li class="year">2013</li>
+
+    <li class="project">
+      <div class="project-point"></div>
+      <div class="project-container group" id="hackpr-container">
+        <div class="project-brief">
+          <h4><a href="http://sohelpful.me">SoHelpful</a></h4>
+          <h5>Product design &middot; Prototyping &middot; Front-end dev</h5>
+          <p>Build your reputation, and your business, by helping others.</p>
+        </div>
+        <div class="project-showcase" id="sohelpful-showcase" data-description="project-sohelpful">
+          <div class="project-reveal-content"></div>
+          <div class="project-showcase-hover"></div>
+        </div>
+      </div><!-- end .project-container -->
+
+      <div class="project-description" id="project-sohelpful">
+        <img src="http://paulmederos.s3.amazonaws.com/adventures/sohelpful-hero-web-01.png" width="100%" class="hero-image" />
+        <h6>Fig. S-1</h6>
+        <p>Visuals for fully-responsive web app (sketched, designed, and coded by yours truly; integrated to Rails back-end by Kevin, the founder of SoHelpful.)</p>
+        <p>Kevin has an incredibly strong belief at the core of his 5th venture: that <strong>if you share knowledge and help others, the kindness will return 100x to you</strong>. With this belief (and a buttload of customer development), Kevin has found that creative freelancers get more business by offering office hours to the public. SoHelpful is a collection-of-tools that he's built from his own experiences to help other freelancers grow their reputation + business.</p>
+        <p>Originally I was one of Kevin's alpha testers, providing feedback and insight on what he was trying to build. But his passion (and the opportunity to help) drew me in to help him refine his hypotheses.</p>
+        <p>I worked closely with Kevin to identify who this process benefits the most (so far, we've found creative freelancers love + need this), and what parts of the process are most painful (automatically collecting testimonials to build reputation and integrating with scheduling solutions.)</p>
+      </div><!-- end .project-description -->
+    </li><!-- end .project -->
+
+    <li class="project">
+      <div class="project-point"></div>
+      <div class="project-container group" id="hackpr-container">
+        <div class="project-brief">
+          <h4><a href="http://hackpr.co">HackPR</a></h4>
+          <h5>Product design &middot; Prototyping &middot; Front-end Dev</h5>
+          <p>Reporters need sources. Startups need press. HackPR (by <a href="http://firstround.com" target="_blank">First Round</a>) connects them.</p>
+        </div>
+        <div class="project-showcase" id="hackpr-showcase" data-description="project-hackpr">
+          <div class="project-reveal-content"></div>
+          <div class="project-showcase-hover"></div>
+        </div>
+      </div><!-- end .project-container -->
+
+      <div class="project-description" id="project-hackpr">
+        <img src="http://paulmederos.s3.amazonaws.com/adventures/hackpr-hero-web-01.png" width="100%" class="hero-image" />
+        <h6>Fig. H-1</h6>
+        <p>Visual prototypes for web app (built w/ Rails + JS magic.) Product still under wraps, so no juicy details.</p>
+      </div><!-- end .project-description -->
+    </li><!-- end .project -->
+
+    <li class="project">
+      <div class="project-point"></div>
+      <div class="project-container group" id="kale-container">
+        <div class="project-brief">
+          <h4><a href="http://getkale.com">Kale</a></h4>
+          <h5>Product design &middot; Rails Web API &middot; iOS Client</h5>
+          <p>Celebrate your food to eat healthier. Kale helps people track and share their meals.</p>
+        </div>
+        <div class="project-showcase" id="kale-showcase" data-description="project-kale">
+          <div class="project-reveal-content"></div>
+          <div class="project-showcase-hover"></div>
+        </div>
+      </div><!-- end .project-container -->
+
+      <div class="project-description" id="project-kale">
+        <img src="http://paulmederos.s3.amazonaws.com/adventures/kale-hero-iphones.png" width="100%" class="hero-image" />
+        <h6>Fig. K-1</h6>
+        <p>Mobile prototype designs, Kale for iOS app.</p>
+        <p><em>Sidenote:</em> Given that this is a personal project of mine, and I love moving fast, these visual mocks are most certainly outdated. Check out <a href="https://itunes.apple.com/us/app/kale-for-ios/id600978472?mt=8" target="_blank">Kale for iOS on the App Store</a> for the most current experience (especially if you want to celebrate your food!) If you're interested in a deeper run-through of this project, please <a href="http://blog.paulmederos.com/post/44566697181/startup-adventures-kale" target="_blank">read the blog post</a> where I discuss my experiments in designing and building Kale.</p>
+
+        <img src="http://paulmederos.s3.amazonaws.com/adventures/kale-hero-web.png" width="100%" />
+        <h6>Fig. K-2</h6>
+        <p>Landing pages, web app, and email templates.</p>
+      </div><!-- end .project-description -->
+    </li><!-- end .project -->
+
+    <li class="year inner-year">2012</li>
+
+    <li class="project">
+      <div class="project-point"></div>
+      <div class="project-container group" id="cor-container">
+        <div class="project-brief">
+          <h4><a href="http://corhq.com">Cor</a></h4>
+          <h5>Product design &middot; Front-end dev &middot; PHP CI Integ.</h5>
+          <p>Health is no longer a perk, it’s a priority. Cor is an employee wellness engagement platform.</p>
+        </div>
+        <div class="project-showcase" id="cor-showcase" data-description="project-cor">
+          <div class="project-reveal-content"></div>
+          <div class="project-showcase-hover"></div>
+        </div>
+      </div><!-- end .project-container -->
+
+      <div class="project-description" id="project-cor">
+        <img src="http://paulmederos.s3.amazonaws.com/adventures/cor-hero-web.png" width="100%" class="hero-image" />
+        <h6>Fig. C-1</h6>
+        <p>Responsive web/mobile designs for Cor.</p>
+        <p>Cor helps people get healthier. It does this by helping them where it hurts - in the office. We built an amazing platform to help large companies (specifically their HR branch) manage their wellness programs. At the center of our program was competition as a motivator. We split employees up into teams and ran challenges (eg. which team can lost the most weight in 8 weeks, which team can accumulate the most steps in 6 weeks, etc.)</p>
+        <p>The end result were healthier, happier, more productive employees that actually enjoyed and engaged with their health!</p>
+
+        <img src="http://paulmederos.s3.amazonaws.com/adventures/cor-hero-responsives.png" width="100%" />
+        <h6>Fig. C-2</h6>
+        <p>Landing page, dashboards, daily emails, etc.</p>
+        <p>My role was to mold product V2. I joined during a transitory state, where the company was shifting from FitFeud (which focused solely on competitions for wellness) to Cor, which increased it's scope to encompass other areas of wellness, with a focus on social engagement to drive behavior change.</p>
+        <p>I worked directly with the founder, Nicholas, and the lead engineer, Dave, to design experiences for two very specific audiences - corporate employees and HR managers. We focused on building engagement (stick with me, I know "engagement" could mean anything) for the employees, and on building automated reporting for the HR department.</p>
+        <p>We knew from the first product that employees loved competition. It drives people to do better. Socially acknowledging accomplishments (no matter how small) kept people excited to come back and check-in their progress. We gave employees a place to chat (we called it the Watercooler) to share resources and encourage each other... suprisingly, trash-talking was prevalent, but it kept people motivated! Daily emails + SMS tests were designed to reel employees back in to the competition and keep them on track.</p> 
+        <p>For HR, we provided reporting tools to show them who was engaged. We allowed them to analyze the competition + social data to figure out how to best motivate people (would employees enjoy free yoga classes, or perhaps a smoking cessation seminar, or even possibly catered healthy lunch?) When HR had news, events, or other notifications, we provided a platform for HR to speak directly to their employees in an environment directly connected with their wellness. The end result was an HR/wellness manager that was incredibly connected to their fellow co-workers, and able to guide their wellness program more effectively.</p>
+      </div><!-- end .project-description -->
+    </li><!-- end .project -->
+
+    <li class="project">
+      <div class="project-point"></div>
+      <div class="project-container group" id="reboot-container">
+        <div class="project-brief">
+          <h4><a href="http://rebootamerica.org">Reboot America</a></h4>
+          <h5>Web design &middot; Full-stack dev &middot; Tumblr theme</h5>
+          <p>Connecting America’s leading corporations and emerging startups to solve our greatest challenges.</p>
+        </div>
+        <div class="project-showcase" id="reboot-showcase" data-description="project-reboot">
+          <div class="project-reveal-content"></div>
+          <div class="project-showcase-hover"></div>
+        </div>
+      </div><!-- end .project-container -->
+
+      <div class="project-description" id="project-reboot">
+        <img src="http://paulmederos.s3.amazonaws.com/adventures/reboot-hero-web.png" width="100%" class="hero-image" />
+        <h6>Fig. R-1</h6>
+        <p>Collaborated with Startup DC to <em>quickly</em> put up a site for their Reboot America Summit event, along with matching Tumblr template.</p>
+      </div><!-- end .project-description -->
+    </li><!-- end .project -->
+
+    <li class="project">
+      <div class="project-point"></div>
+      <div class="project-container group" id="fosterly-container">
+        <div class="project-brief">
+          <h4><a href="http://foster.ly">Foster.ly</a></h4>
+          <h5>Product design &middot; Front-end dev &middot; Rails APIs</h5>
+          <p>Supporting entrepreneurs in the DC, MD, and VA area. Connect, learn, and share resources.</p>
+        </div>
+        <div class="project-showcase" id="fosterly-showcase" data-description="project-fosterly">
+          <div class="project-reveal-content"></div>
+          <div class="project-showcase-hover"></div>
+        </div>
+      </div><!-- end .project-container -->
+
+      <div class="project-description" id="project-fosterly">
+        <img src="http://paulmederos.s3.amazonaws.com/adventures/fosterly-hero-web.png" width="100%" class="hero-image" />
+        <h6>Fig. F-1</h6>
+        <p>Responsive web/mobile designs for Fosterly. For more details on this project (and why/what/how I did it) check out <a href="http://www.linkedin.com/in/pmederos" target="_blank">my LinkedIn profile</a>.</p>
+      </div><!-- end .project-description -->
+    </li><!-- end .project -->
+
+  </ol><!-- end .timeline -->
+</article>

@@ -1,0 +1,12 @@
+/*  
+  ========================================
+  Using Rails Compass instead of Sprockets to
+  compile all stylesheets and provide extra 
+  functionality 
+  ========================================
+*/
+
+// @import "compass";
+@import "normalize";
+@import "animate";
+@import "core";
