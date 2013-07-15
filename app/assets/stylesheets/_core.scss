@@ -133,6 +133,14 @@ hr {
   border-radius: 4px;
 }
 
+ul li, ol li {
+  font-size: 1.2em;
+  margin-bottom:.5em;
+  line-height: 1.4;
+
+  @include mq-personal { font-size:1em; }
+}
+
 .full-wrap {
   width: 92%;
   max-width: 1000px;
@@ -154,6 +162,8 @@ hr {
     clear: both;
   }
 }
+
+.inline-sidenote { color:#999; }
 
 
 /*  ==========================================
@@ -548,6 +558,53 @@ hr {
   text-decoration: none;
 }
 
+.previous-posts {
+  border-top:4px solid #ddd;
+  margin-top:8em;
+  text-align: center;
+
+  h6 {
+    display:inline;
+    padding:1em;
+    background-color:#F3F3F3;
+    text-align: center;
+    font-size:1.2em;
+    position:relative;
+    top:-.75em;
+    text-transform: uppercase;
+    color: #aaa;
+    z-index: 1;
+  }
+}
+
+.previous-posts-list {
+  margin:1em auto;
+  padding:0;
+  width:100%;
+
+  li {
+    display:block;
+    margin:0 auto;
+
+    a {
+      display: block;
+      width:92%;
+      height:100%;
+      border-radius: 3px;
+      text-decoration: none;
+      padding:1em 4%;
+      z-index: 2;
+      line-height: 1;
+    }
+
+    a:hover { background-color: #ddd; }
+
+    .month {
+      color:#aaa;
+      font-size: .8em;
+    }
+  }
+}
 
 /*  ==========================================
     4.0  Portfolio styles
