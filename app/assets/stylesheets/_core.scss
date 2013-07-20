@@ -104,6 +104,8 @@ body {
 
 h1, h2, h3 { font-family: $font_headers; }
 
+h3 { margin:3em 0 1em; }
+
 blockquote {
   border-left: 6px solid $color_orange;
   margin: 0;
