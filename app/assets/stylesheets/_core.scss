@@ -167,6 +167,12 @@ ul li, ol li {
 
 .inline-sidenote { color:#999; }
 
+.not-full {
+  @include mq-tablet {
+    max-width: 100%;
+  }
+}
+
 
 /*  ==========================================
     2.0  Navigation and Menu page
