@@ -104,7 +104,12 @@ body {
 
 h1, h2, h3 { font-family: $font_headers; }
 
-h3 { margin:3em 0 1em; }
+h3 { 
+  margin:2em 0 1em; 
+  font-size:1.6em; 
+  color:#333; 
+  @include mq-personal { font-size:1.3em; }
+}
 
 blockquote {
   border-left: 6px solid $color_orange;
@@ -172,7 +177,6 @@ ul li, ol li {
     max-width: 100%;
   }
 }
-
 
 /*  ==========================================
     2.0  Navigation and Menu page
@@ -516,11 +520,13 @@ ul li, ol li {
 .main-content { }
 
 .main-content .timestamp {
+  display:block;
   margin-top:2em;
   color: #D4D4D4;  
-  @include transition(color);
-  cursor: default;
+  text-decoration: none;
 
+  &:hover { background:transparent; }
+  @include transition(color);
   @include mq-personal { font-size: .8em; }
 }
 
@@ -676,7 +682,7 @@ ul li, ol li {
       content: '';
       display: block;
       position: absolute;
-      top: 13px;
+      top: 19px;
       left: -4px;
       width: 0;
       height: 0;
@@ -689,7 +695,7 @@ ul li, ol li {
       content: '';
       display: block;
       position: absolute;
-      top: 12px;
+      top: 18px;
       left: -4px;
       width: 0;
       height: 0;
@@ -710,14 +716,14 @@ ul li, ol li {
   .project-brief {
     float:left;
     width:42%;
-    padding:2em 4%;
+    padding:1em 4%;
 
-    h4 { font-size: 1.6em; color:#333; text-transform:none; margin:0;}
+    h4 { font-size: 1.2em; color:#333; text-transform:none; margin:0;}
     h4 a {color:$color_orange; text-decoration:none; }
     h4 a:hover { text-decoration:underline; }
 
-    h5 { font-weight:100; color:#999; font-size:.8em; margin:1em 0;}
-    p { margin-bottom:0; font-size:1em; }
+    h5 { font-weight:100; color:#999; font-size:.6em; margin:1em 0;}
+    p { margin-bottom:0; font-size:.8em; }
   }
 
   .project-showcase {

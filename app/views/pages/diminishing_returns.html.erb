@@ -1,0 +1,57 @@
+<%  # Page variables 
+		@post_title = "Diminishing returns in behavior change"
+		@post_title_html = "Diminishing returns <br />in behavior change"
+		@disqus_url = "http://paulmederos.com/diminishing-returns-behavior-change"
+		@background_image = "http://paulmederos.s3.amazonaws.com/blog/backgrounds/diminishing_returns.jpg" 
+		@color_overlay = "rgba(255,60,60,.8)"
+%>
+
+<%= render "layouts/blog_header" %>
+
+<article class="main-content">
+	<div class="full-wrap copy-wrap">
+		<a href="/diminishing-returns-behavior-change" class="timestamp">August 8 <span class="timestamp-year">2013</span></a>
+		<p>I love my <a href="http://sidebar.io" target="_blank">Sidebar.io</a> daily email. It has great content that I care about (and deem useful.) It's well-designed. It's easy to use (sent straight to my inbox.) Yet it still finds its way to my archive without being read.</p>
+
+		<p>Why? Because motivation (and the tactics we use to encourage specific behaviors) has diminishing returns.</p>
+
+		<ul>
+			<li>Notifications? Get ignored over time.</li>
+			<li>Email digest? Fade to your archived or trash.  </li>
+			<li>Spiffy animations? Become normal, unnoticeable.</li>
+			<li>Great content? Overloads, you start to skim or pass over.</li>
+		</ul>
+
+		<p>Successful behavior requires balance. By keeping your product simple + focused, it's easier to determine the effects of each behavior change tactic (aka "a feature".)</p>
+
+		<p>Sidebar.io is a simple product. If I were to tweak one variable, I could measure its effect and determine causality. </p>
+
+		<p><i>Example: what if it was delivered once a week? What if it was delivered 3 times per week? What if it was delivered a random # of times per week?</i></p>
+
+		<h3>Balance isn't obvious</h3>
+		<p>Many tactics seem obviously helpful, but they <i>could</i> be detrimental. Don't put things in your product just to follow the crowd or "best-practice".</p>
+
+		<p><i>Example: with <a href="http://getkale.com" target="_blank">Kale</a>, I thought it was obvious that allowing people to visit user profiles would result in more engagement. "It's community building, durr" was my excuse. But through feedback + observation, I recognized that people were less likely to post food because they knew anyone could see it.</i></p>
+
+		<h3>Motivation is physical, too</h3>
+		<p>Your product isn't the only thing that causes motivation decay, and it's not all mental. Dopamine fatigue and blood sugar drop physically affect motivation. You could be causing <a href="http://seriouspony.com/blog/2013/7/24/your-app-makes-me-fat" target="_blank">other problems in your users' lives</a>. Please consider if your tactic is worth their time, and not just another positive metric for your product.</p>
+
+		<h3>Variability slows decay</h3>
+		<p>Supplying rewards on a variable ratio (aka. "optimized" randomness) is a good way to stave off motivation fatigue.</p>
+
+		<p>Let's look at Facebook notifications. They hook lots of people. Why? They are incredibly variable. You never know when you'll get one, and probably have no idea what it's for. It could be someone liking, inviting you, commenting, sharing, tagging, etc.</p>
+
+		<p>But get too many Facebook notifications and you'll start ignoring. You feel pulled-in, wasted, and tired. </p>
+
+		<p><i>Possible fix: I'm sure the smart designers at Facebook have considered this, but why not limit notifications? Above a certain point, notifications should be batched and sent at variable times. This would help alleviate notification fatigue + increase engagement.</i></p>
+
+		<p>Now let's shift focus to your inbox (for just a second.) </p>
+
+		<p>If you keep reacting to emails all day, you become stressed. If you batch them out and dedicate small windows of your day to focus on email, you'll notice a huge jump in productivity - not just in taking care of email, but in other areas of your day as well.</p>
+
+		<h3>Design for diminishing returns</h3>
+		<p>Keep diminishing returns in mind during your next design session. Think of balance. Think of how you can take advantage of interval variability to not only increase engagement, but help your user spend their time more wisely throughout their day.</p>
+	</div>
+</article>
+
+<%= render "layouts/footer" %>
