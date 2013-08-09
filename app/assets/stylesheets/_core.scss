@@ -641,7 +641,9 @@ ul li, ol li {
   &>p { margin:4em 0;}
 
   .timeline {
-    background:url("http://paulmederos.s3.amazonaws.com/adventures/timeline-spine.png") repeat-y top left;
+    background-image:url("http://paulmederos.s3.amazonaws.com/adventures/timeline-spine.png");
+    background-repeat:repeat-y;
+    background-position:3em 0;
     height:auto;
     border-top:4px solid $color_orange;
     padding:.25em 0 0 0;
