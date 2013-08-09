@@ -641,7 +641,7 @@ ul li, ol li {
   &>p { margin:4em 0;}
 
   .timeline {
-    background:url("/assets/timeline-spine.png") repeat-y top left;
+    background:url("http://paulmederos.s3.amazonaws.com/adventures/timeline-spine.png") repeat-y top left;
     height:auto;
     border-top:4px solid $color_orange;
     padding:.25em 0 0 0;
@@ -743,7 +743,7 @@ ul li, ol li {
     right:1em;
     width:42px;
     height:42px;
-    background:url('/assets/down-arrow.png') no-repeat;
+    background:url('http://paulmederos.s3.amazonaws.com/adventures/down-arrow.png') no-repeat;
     z-index: 3;
     border: .25em solid rgba(0, 0, 0, .5);
     border-radius: 50%;
