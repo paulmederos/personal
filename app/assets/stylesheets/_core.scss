@@ -449,9 +449,11 @@ ul li, ol li {
   }
 }
 
+.card-chef { border-radius:4px; }
+
 .internet-card h3 {
   font-size: 1.4em;
-  margin:1em 0 0;
+  margin:.75em 0 0;
   padding-right:.25em;
 
   @include mq-personal {
