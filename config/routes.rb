@@ -3,7 +3,7 @@ Paulmederos::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#diminishing_returns'
+  root 'pages#designing_for_growth_mindset'
 
   get '/adventures', to: 'pages#portfolio' 
 
