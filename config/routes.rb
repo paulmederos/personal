@@ -12,6 +12,6 @@ Paulmederos::Application.routes.draw do
   get '/helping-others-builds-reputation', to: 'pages#helping_others_builds_reputation'
   get '/side-project-or-real-product', to: 'pages#side_project_or_real_product'
   get '/diminishing-returns-behavior-change', to: 'pages#diminishing_returns'
-  get '/how-to-eat', to: 'pages#how-to-eat' 
+  get '/how-to-eat', to: 'pages#how_to_eat' 
   
 end
