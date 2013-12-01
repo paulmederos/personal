@@ -1,0 +1,66 @@
+<%  # Page variables 
+    @post_title = "Happy Birthday, Angela"
+%>
+
+<article class="main-content full-wrap copy-wrap angela-birthday">
+  <header class="angela-date animated slowly delayed fadeIn">
+    <a href="/happy-birthday-angela">Dec. 1<sup>st</sup>, 2013</a>
+  </header>
+
+  <img src="/assets/dear-angela.png" class="angela-dear animated fadeInDown" />
+
+  <div class="angela-letter animated delayed fadeInUp">
+    <p>About a month ago, I was taking a stroll through my lovely Californian neighborhood on a bright, sunny day. Birds were chirping overhead, putting me in a delightful mood as my mind wandered from "what should I work on next" to "what's the meaning of life?" I find that walking meditation helps me unravel thoughts in my mind, and to clarify the important things in life. </p>
+    <p>These sorts of walking meditations usually end up in the same place&mdash;declarations of gratitude. I can't begin to give enough thanks for all the beauty in my life. I'm thankful for all the people that have brought me blessing after blessing. I give thanks frequently for my family <span class="amp">&amp;</span> friends, my work and talents, and for the humility I've had the luck to stumble across.</p>
+    <p>But this stroll wasn't like the other strolls. This one was different. This time, my heart lead me to explore something rather powerful.</p>
+    <p>You see, I began to run through the various role models and mentors that I've kept through my life. Person after person, I recanted words of wisdom and words to live by. I drew up faces of those I admired, and I remembered the qualities that I enjoyed about these people. But the most interesting part was my subconcious ranking system. I was trying to figure out who the best role model was. Who had affected my life more-so than anyone else? I had never considered this before, so I had no idea what I would find...</p>
+    <p>...can you guess who came out on top? It was <b>you</b>, Angela.</p>
+    <img src="http://paulmederos.s3.amazonaws.com/blog/angela/angela-birthday-19.jpg" class="angela-full-image" />
+    <p>Let me explain. You have all the qualities of the Spirit. You are kind, caring, and compassionate. I don't know anyone with your patience. You seek to resolve every conflict through peace and udnerstanding. Selflessness is second-nature. Sacrifice is your middle name (although Catherine is just as lovely.) The courage and bravery you've shown to fight the way you've fought over the time I've known you is phenomenal.</p>
+    <p>In a sentence: <b>love is at the absolute center of your being</b>.</p>
+    <img src="http://paulmederos.s3.amazonaws.com/blog/angela/angela-birthday-04.jpg" class="angela-full-image" />
+    <p>You are my ultimate role model. I find it crazy that of all the role models I could have in the world, from Steve Jobs to Elon Musk to Jesus himself, you're the person that leads the pack.</p>
+    <p>On your birthday today, I wanted to thank you from the bottom of my heart (literally, this stuff is coming from the deepest parts.) I want to thank you for being an amazing mom. I want to thank you for being an amazing wife to my dad. I want to thank you for being there (and having been there) for me in a million ways that I'll never know about.</p>
+    <p>I spent the past few days pouring over tens of thousands of photos (and associated memories) to find my favorite photos of you. These are ones that I feel most strongly represent your love. Some are beautiful, some are goofy, some are serious, but they're all the best of who you are. I hope you enjoy them:</p>
+    <ul class="rslides">
+    </ul>
+    <p class="angela-caption">Tap on a photo to make it bigger.</p>
+    <p style="text-indent:0; text-align:left;">Here's wishing you a fantastic birthday. Happy Birthday Angela!</p>
+    <img src="/assets/angela-with-love.png" class="angela-with-love" />
+  </div>
+
+  <footer>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        for (var i=1;i<53;i++) {
+          var image_url = 'http://paulmederos.s3.amazonaws.com/blog/angela/angela-birthday-'+pad(i)+'.jpg';
+          $('.rslides').append('<li><a href="'+image_url+'" target="_blank"><img src="' + image_url + '"></li>');
+        }
+
+        $(".rslides").responsiveSlides({
+            auto: true,             // Boolean: Animate automatically, true or false
+            speed: 500,            // Integer: Speed of the transition, in milliseconds
+            timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+            pager: false,           // Boolean: Show pager, true or false
+            nav: true,             // Boolean: Show navigation, true or false
+            random: true,          // Boolean: Randomize the order of the slides, true or false
+            pause: false,           // Boolean: Pause on hover, true or false
+            pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+            prevText: "Previous",   // String: Text for the "previous" button
+            nextText: "Next",       // String: Text for the "next" button
+            maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+            navContainer: ".rslides",       // Selector: Where controls should be appended to, default is after the 'ul'
+            manualControls: "",     // Selector: Declare custom pager navigation
+            namespace: "rslides",   // String: Change the default namespace used
+            before: function(){},   // Function: Before callback
+            after: function(){}     // Function: After callback
+          });
+      });
+
+      function pad(number) {
+        return (number < 10 ? '0' : '') + number
+      }
+    </script>
+  </footer>
+</article>

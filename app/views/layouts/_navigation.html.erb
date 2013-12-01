@@ -1,31 +1,35 @@
-<nav class="main-navigation">
-	<div class="full-wrap">
-		<a href="/" class="mark" data-no-turbolink><span>Paul Mederos</span></a>
-		<span class="hamburger"></span>
-	</div>
-</nav>
+<% if params[:action] == "angela" %>
 
-<nav class="menu-overlay">
-	<div class="menu-nav-container">
-		<ul class="menu-nav">
-			<% if params[:action] == "portfolio" %>
-				<li class="menu-item" data-target="blog"><a href="/" data-no-turbolink>Blog</a></li>
-				<li class="menu-item active" data-target="adventures"><a href="/adventures" data-no-turbolink>Adventures</a></li>
-			<% else %>
-				<li class="menu-item active" data-target="blog"><a href="/" data-no-turbolink>Blog</a></li>
-				<li class="menu-item" data-target="adventures"><a href="/adventures" data-no-turbolink>Adventures</a></li>
-			<% end %>
-		</ul>
-	</div>
+<% else %>
+	<nav class="main-navigation">
+		<div class="full-wrap">
+			<a href="/" class="mark" data-no-turbolink><span>Paul Mederos</span></a>
+			<span class="hamburger"></span>
+		</div>
+	</nav>
 
-	<div class="about-me full-wrap copy-wrap group">
-		<span class="avatar-me"></span>
-		<p>Hi, I'm Paul Mederos. My mission in life is to bring joy to others; to help them live more fulfilling lives. Design is how I do that; building useful, delightful, digital products is what I do.</p>
-	</div>
+	<nav class="menu-overlay">
+		<div class="menu-nav-container">
+			<ul class="menu-nav">
+				<% if params[:action] == "portfolio" %>
+					<li class="menu-item" data-target="blog"><a href="/" data-no-turbolink>Blog</a></li>
+					<li class="menu-item active" data-target="adventures"><a href="/adventures" data-no-turbolink>Adventures</a></li>
+				<% else %>
+					<li class="menu-item active" data-target="blog"><a href="/" data-no-turbolink>Blog</a></li>
+					<li class="menu-item" data-target="adventures"><a href="/adventures" data-no-turbolink>Adventures</a></li>
+				<% end %>
+			</ul>
+		</div>
 
-	<button class="find-me-button">Find me on the internets</button>
+		<div class="about-me full-wrap copy-wrap group">
+			<span class="avatar-me"></span>
+			<p>Hi, I'm Paul Mederos. My mission in life is to bring joy to others; to help them live more fulfilling lives. Design is how I do that; building useful, delightful, digital products is what I do.</p>
+		</div>
 
-	<div class="working-on-container">
-		<%= render "layouts/menu/working_on" %>
-	</div>
-</nav>
+		<button class="find-me-button">Find me on the internets</button>
+
+		<div class="working-on-container">
+			<%= render "layouts/menu/working_on" %>
+		</div>
+	</nav>
+<% end %>

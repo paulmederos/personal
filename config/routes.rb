@@ -13,5 +13,6 @@ Paulmederos::Application.routes.draw do
   get '/side-project-or-real-product', to: 'pages#side_project_or_real_product'
   get '/diminishing-returns-behavior-change', to: 'pages#diminishing_returns'
   get '/how-to-love-your-food', to: 'pages#how_to_love_your_food' 
+  get '/happy-birthday-angela', to: 'pages#angela'
   
 end

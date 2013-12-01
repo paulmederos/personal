@@ -4,6 +4,8 @@
 
     0.0  SASS Variables and Mixins
     1.0  General app styles
+    3.0  Blog templates
+    4.0  Custom pages (Angela)
 
 ============================================== */
 
@@ -176,6 +178,12 @@ ul li, ol li {
   @include mq-tablet {
     max-width: 100%;
   }
+}
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /*  ==========================================
@@ -831,4 +839,141 @@ ul li, ol li {
     .welcome p { font-size: 1em; }
   }
 
+}
+
+
+
+
+/*  ==========================================
+    4.0  Custom pages (Angela)
+    ========================================== */
+
+.angela-birthday {
+  color:#222;
+
+  p { 
+    text-align: justify; 
+    text-indent: 2em; 
+  }
+
+  img { max-width:100%; border-radius:4px; }
+
+  @include mq-personal {
+    p { text-indent:1.5em; }
+  }
+}
+
+.angela-date {
+  position: absolute;
+  top: 1em;
+  right: 0;
+  font-weight: 100;
+  color: #CCC;
+  margin: 0;
+  background-color:#f52555;
+  padding:.5em 4% .5em .75em;
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+  line-height: 1;
+  margin-bottom: 0;
+
+  a { 
+    color:white; 
+    text-decoration: none;
+  }
+
+  @include mq-personal {
+    font-size: .8em;
+    font-weight: 300;
+  }
+}
+
+.angela-dear {
+  display: block;
+  width:400px;
+  max-width: 100%;
+  height:auto;
+  margin-top: 0;
+  padding-top:3em;
+
+  @include mq-personal {
+    padding-top:3em;
+    width: 100%;
+    margin:0 auto;
+    height:72px;
+  }
+}
+
+.amp { font-family:'Baskerville'; font-style:italic; }
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+.rslides1_nav.prev,
+.rslides1_nav.next {
+  position: absolute;
+  top: .5em;
+  display: block;
+  background: #f52555;
+  opacity: .85;
+  z-index: 50;
+  padding:1.5em ;
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:.8em;
+  font-weight: 500;
+}
+
+.rslides1_nav.prev { left:.5em; }
+.rslides1_nav.next { right:.5em; }
+
+p.angela-caption {
+  text-indent:0 !important;
+  display: block;
+  font-size: .8em;
+  color:#999;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  margin:0 0 1.5em 0;
+}
+
+.angela-with-love {
+  display: block;
+  width:400px;
+  max-width: 100%;
+  height:auto;
+  margin-top: 0;
+  padding-bottom:3em;
 }
