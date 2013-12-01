@@ -977,3 +977,8 @@ p.angela-caption {
   margin-top: 0;
   padding-bottom:3em;
 }
+
+.imgur-album {
+  height:550px !important;
+  @include mq-personal { height:280px !important; }
+}
