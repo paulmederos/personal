@@ -31,11 +31,15 @@
 
   <footer>
     <script type="text/javascript">
-      $(document).ready(function(){
 
+      $(function() {
         for (var i=1;i<53;i++) {
-          var image_url = 'http://paulmederos.s3.amazonaws.com/blog/angela/angela-birthday-'+pad(i)+'.jpg';
-          $('.rslides').append('<li><a href="'+image_url+'" target="_blank"><img src="' + image_url + '"></li>');
+          var image_url = 'http://paulmederos.s3.amazonaws.com/blog/angela/angela-birthday-' + 
+              pad(i) + '.jpg';
+          $('.rslides').append('<li><a href="'+
+                                image_url + 
+                                '" target="_blank"><img src="' + 
+                                image_url + '"></li>');
         }
 
         $(".rslides").responsiveSlides({
@@ -57,7 +61,6 @@
             after: function(){}     // Function: After callback
           });
       });
-
       function pad(number) {
         return (number < 10 ? '0' : '') + number
       }
