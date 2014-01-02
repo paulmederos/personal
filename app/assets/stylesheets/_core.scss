@@ -734,7 +734,7 @@ ul li, ol li {
     h4 a {color:$color_orange; text-decoration:none; }
     h4 a:hover { text-decoration:underline; }
 
-    h5 { font-weight:100; color:#999; font-size:.6em; margin:1em 0;}
+    h5 { font-weight:100; color:#999; font-size:.6em; margin:0 0 1em;}
     p { margin-bottom:0; font-size:.8em; }
   }
 
@@ -791,6 +791,10 @@ ul li, ol li {
          -o-transition: opacity .1s linear;
             transition: opacity .1s linear;
   }
+
+  #apk-showcase { background:url('http://d13yacurqjgara.cloudfront.net/users/33080/screenshots/1324860/apk-home-dribbble_1x.png') no-repeat, #126AFF; }
+  #apk-showcase .project-showcase-hover, #apk-showcase.pressed .project-showcase-hover { background:#126AFF; }
+
 
   #sohelpful-showcase { background:url('http://paulmederos.s3.amazonaws.com/adventures/home/adventure-sohelpful.png') no-repeat, #DF683E; }
   #sohelpful-showcase .project-showcase-hover, #sohelpful-showcase.pressed .project-showcase-hover { background:#DF683E; }
