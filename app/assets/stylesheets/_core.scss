@@ -792,6 +792,9 @@ ul li, ol li {
             transition: opacity .1s linear;
   }
 
+  #ps-showcase { background:url('http://paulmederos.s3.amazonaws.com/adventures/home/adventure-ps.png') no-repeat, #005F74; }
+  #ps-showcase .project-showcase-hover, #ps-showcase.pressed .project-showcase-hover { background:#005F74; }
+
   #apk-showcase { background:url('http://d13yacurqjgara.cloudfront.net/users/33080/screenshots/1324860/apk-home-dribbble_1x.png') no-repeat, #126AFF; }
   #apk-showcase .project-showcase-hover, #apk-showcase.pressed .project-showcase-hover { background:#126AFF; }
 
