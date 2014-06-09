@@ -4,8 +4,10 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore bundler config.
+# Bundler state
 /.bundle
+/vendor/bundle/
+/bin
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -14,5 +16,15 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-
 .DS_Store
+
+# rvm artifacts
+.ruby-version
+.rbenv-vars
+.ruby-gemset
+
+# pow and powder artifacts
+.powrc
+.powenv
+.powder
+.rbenv-vars
