@@ -13,9 +13,9 @@
 			<ul class="menu-nav">
 				<% if params[:action] == "portfolio" %>
 					<li class="menu-item active" data-target="adventures"><a href="/adventures" data-no-turbolink>Adventures</a></li>
-					<li class="menu-item" data-target="blog"><a href="http://pvm.roon.io" data-no-turbolink>Blog</a></li>
+					<li class="menu-item" data-target="blog"><a href="http://writing.enchant.co" data-no-turbolink>Blog</a></li>
 				<% else %>
-					<li class="menu-item active" data-target="blog"><a href="/" data-no-turbolink>Check My Blog</a></li>
+					<li class="menu-item active" data-target="blog"><a href="http://writing.enchant.co" data-no-turbolink>Check My Blog</a></li>
 				<% end %>
 			</ul>
 		</div>
@@ -25,10 +25,6 @@
 			<p>Hi, I'm Paul Mederos. My mission in life is to bring joy to others; to help them live more fulfilling lives. Design is how I do that; building useful, delightful, digital products is what I do.</p>
 		</div>
 
-		<button class="find-me-button">Find me on the internets</button>
-
-		<div class="working-on-container">
-			<%= render "layouts/menu/working_on" %>
-		</div>
+		<%= render "layouts/menu/working_on" %>
 	</nav>
 <% end %>
